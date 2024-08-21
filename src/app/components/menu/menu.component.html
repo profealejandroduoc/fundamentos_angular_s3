@@ -1,0 +1,12 @@
+<ul>
+    <!-- <li>
+        <a routerLink="/">Home</a>
+    </li>
+    <li>
+        <a routerLink="/ayuda">Ayuda</a>
+    </li> -->
+    <li *ngFor="let ruta of rutas">
+        <a [routerLink]="ruta.path">{{ruta.pagina}}</a>
+    </li>
+
+</ul>
