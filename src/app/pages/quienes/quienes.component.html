@@ -2,3 +2,9 @@
 <div class="mt-3">
     <p>Somos los que somos</p>
 </div>
+
+<div *ngFor="let post of posteos" class="shadow mb-2 rounded p-3" >
+    <h6 >id {{post.id}}</h6>
+    <h1>{{post.title}}</h1>
+    <p>{{post.body}}</p>
+</div>
