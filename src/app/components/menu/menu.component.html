@@ -1,12 +1,19 @@
-<ul>
+
     <!-- <li>
         <a routerLink="/">Home</a>
     </li>
     <li>
         <a routerLink="/ayuda">Ayuda</a>
     </li> -->
-    <li *ngFor="let ruta of rutas">
-        <a [routerLink]="ruta.path">{{ruta.pagina}}</a>
-    </li>
+    <nav class="navbar navbar-expand-sm bg-dark">
 
-</ul>
+        <div class="container-fluid">
+          <!-- Links -->
+          <ul class="navbar-nav">
+            <li *ngFor="let ruta of rutas" class="nav-item">
+                <a [routerLink]="ruta.path" class="nav-link">{{ruta.pagina}}</a>
+            </li>
+          </ul>
+        </div>
+      
+      </nav>

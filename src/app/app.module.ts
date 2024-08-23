@@ -8,6 +8,8 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { AyudaComponent } from './pages/ayuda/ayuda.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { QuienesComponent } from './pages/quienes/quienes.component';
+import { provideHttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,14 @@ import { MenuComponent } from './components/menu/menu.component';
     ContactoComponent,
     AyudaComponent,
     NotfoundComponent,
-    MenuComponent
+    MenuComponent,
+    QuienesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [provideHttpClient()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -6,19 +6,23 @@ import { Component } from '@angular/core';
   styleUrl: './menu.component.css'
 })
 export class MenuComponent {
-  rutas=[
+  rutas = [
     {
-      path:'/',
-      pagina:'Home'
-    }
-    ,
-    {
-      path:'/ayuda',
-      pagina:'Ayuda'
+      path: '/',
+      pagina: 'Home'
     },
     {
-      path:'/contacto',
-      pagina:'Contacto'
-    }
+      path: '/quienes',
+      pagina: 'Quienes Somos'
+    },
+    
+    {
+      path: '/contacto',
+      pagina: 'Contacto'
+    },
+    {
+      path: '/ayuda',
+      pagina: 'Ayuda'
+    },
   ]
 }
